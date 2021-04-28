@@ -1,0 +1,72 @@
+.videoDemo{
+    background-color: $color-white-0;
+    .videoDemo-content{
+        padding: 100px 0;
+        .videoDemo-infor{
+            margin-left: 25%;
+            .videoFit{
+                width: 100%;
+                iframe{                           
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+@include responsive("large"){
+    .videoDemo{
+        background-color: $color-white-0;
+        .videoDemo-content{
+            padding: 100px 0;
+            .videoDemo-infor{
+                margin-left: 20%;
+                .videoFit{
+                    width: 100%;
+                    iframe{                           
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("medium"){
+    .videoDemo{
+        background-color: $color-white-0;
+        .videoDemo-content{
+            padding: 100px 0;
+            .videoDemo-infor{
+                margin-left: 10%;
+                .videoFit{
+                    width: 100%;
+                    iframe{                           
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive("small"){
+    .videoDemo{
+        background-color: $color-white-0;
+        .videoDemo-content{
+            padding: 100px 0;
+            .videoDemo-infor{
+                margin-left: 0;
+                .videoFit{
+                    width: 100%;
+                    iframe{    
+                        width: 100%;                       
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

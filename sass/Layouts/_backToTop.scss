@@ -1,0 +1,23 @@
+.backToTop{
+    background-color: $color-black-bg;
+    opacity: .6;
+    color: $color-white-0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all .5s;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    &:hover{
+        background-color: $color-yellow;
+        color:$color-black-1
+    }
+}
+
+@include responsive("medium"){
+    .backToTop{
+        display: none;
+    }
+}

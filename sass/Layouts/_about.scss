@@ -1,0 +1,223 @@
+.Myabout{
+  background-color: $color-white-0;
+    .about-content{
+        padding: 100px 0;
+        text-align: center;
+        h3{
+            @include styleText($color-black-1,$fs-5,$fw-normal);
+            line-height: $line-height-0;
+        }
+        .half-txt{
+           @include styleText($color-gray-0,$fs-0,$fw-normal); 
+           padding: $pd-3 0 0 ;
+           width: 60%;
+           margin: 0 auto;
+        }
+        .about-detail{
+          padding-top: 100px;
+            .about-item{
+                padding: 0;
+                position: relative;
+                margin: 0 $mg-3;
+                text-align: left;
+                border: 1px solid $color-gray-3;
+                border-radius: $border-radius;
+                padding:  $pd-4 $pd-3 $pd-3 $pd-3;
+                h4{
+                    @include styleText($color-black-1,$fs-3,$fw-normal);
+                    margin-bottom: $mg-3;
+                }
+                p{
+                    @include styleText($color-gray-0,$fs-0,$fw-normal);
+                    padding-top: 0;
+                }
+                .about-icon{
+                    position: absolute;
+                    top: -30px;
+                    left: 24px;
+                    border-right: 7px solid $color-white-0;
+                    border-left: 7px solid $color-white-0;
+                      .out_line{
+                          border-radius: $border-radius;
+                          background-color: $color-black-bg;
+                          width: 60px;
+                          height: 60px;
+                          color: $color-white-0;
+                          font-size: 30px;
+                          text-align: center;
+                          line-height: 60px;
+                          transition: all .5s;
+                      }
+                      &:hover .out_line{
+                          background-color: $color-yellow;
+                      }
+                  }
+            }
+        }
+        
+        
+    }
+}
+@media screen and(min-width:769px) and (max-width:991px){
+    .Myabout{
+        background-color: $color-white-0;
+          .about-content{
+              padding: 100px 0;
+              text-align: center;
+              h3{
+                  @include styleText($color-black-1,$fs-5,$fw-normal);
+                  line-height: $line-height-0;
+              }
+              .half-txt{
+                 @include styleText($color-gray-0,$fs-0,$fw-normal); 
+                 padding: $pd-3 0 0 ;
+                 width: 60%;
+                 margin: 0 auto;
+              }
+              .about-detail{
+                padding-top: 100px;
+                  .about-item{
+                      display: inline-block;
+                      margin-bottom: 50px;
+                       max-width: 95%;
+                      
+                    .about-info{
+                        width: 80%;
+                    }
+                      .about-icon{
+                          position: absolute;
+                          top: -30px;
+                          left: 24px;
+                          border-right: 7px solid $color-white-0;
+                          border-left: 7px solid $color-white-0;
+                            .out_line{
+                                border-radius: $border-radius;
+                                background-color: $color-black-bg;
+                                width: 60px;
+                                height: 60px;
+                                color: $color-white-0;
+                                font-size: 30px;
+                                text-align: center;
+                                line-height: 60px;
+                                transition: all .5s;
+                            }
+                            &:hover .out_line{
+                                background-color: $color-yellow;
+                            }
+                        }
+                  }
+              }
+              
+              
+          }
+      }
+}
+
+@include responsive("medium"){
+    .Myabout{
+        background-color: $color-white-0;
+          .about-content{
+              padding: 100px 0;
+              text-align: center;
+              h3{
+                  @include styleText($color-black-1,$fs-5,$fw-normal);
+                  line-height: $line-height-0;
+              }
+              .half-txt{
+                 @include styleText($color-gray-0,$fs-0,$fw-normal); 
+                 padding: $pd-3 0 0 ;
+                 width: 60%;
+                 margin: 0 auto;
+              }
+              .about-detail{
+                padding-top: 100px;
+                  .about-item{
+                      display: inline-block;
+                      margin-bottom: 50px;
+                       max-width: 95%;
+                      
+                    .about-info{
+                        width: 80%;
+                    }
+                      .about-icon{
+                          position: absolute;
+                          top: -30px;
+                          left: 24px;
+                          border-right: 7px solid $color-white-0;
+                          border-left: 7px solid $color-white-0;
+                            .out_line{
+                                border-radius: $border-radius;
+                                background-color: $color-black-bg;
+                                width: 60px;
+                                height: 60px;
+                                color: $color-white-0;
+                                font-size: 30px;
+                                text-align: center;
+                                line-height: 60px;
+                                transition: all .5s;
+                            }
+                            &:hover .out_line{
+                                background-color: $color-yellow;
+                            }
+                        }
+                  }
+              }
+              
+              
+          }
+      }
+}
+@include responsive("small"){
+    .Myabout{
+        background-color: $color-white-0;
+          .about-content{
+              padding: 100px 0;
+              text-align: center;
+              h3{
+                  @include styleText($color-black-1,$fs-5,$fw-normal);
+                  line-height: $line-height-0;
+              }
+              .half-txt{
+                 @include styleText($color-gray-0,$fs-0,$fw-normal); 
+                 padding: $pd-3 0 0 ;
+                 width: 80%;
+                 margin: 0 auto;
+              }
+              .about-detail{
+                padding-top: 100px;
+                  .about-item{
+                      display: inline-block;
+                      margin-bottom: 50px;
+                       max-width: 95%;
+                      
+                    .about-info{
+                        width: 80%;
+                    }
+                      .about-icon{
+                          position: absolute;
+                          top: -30px;
+                          left: 24px;
+                          border-right: 7px solid $color-white-0;
+                          border-left: 7px solid $color-white-0;
+                            .out_line{
+                                border-radius: $border-radius;
+                                background-color: $color-black-bg;
+                                width: 60px;
+                                height: 60px;
+                                color: $color-white-0;
+                                font-size: 30px;
+                                text-align: center;
+                                line-height: 60px;
+                                transition: all .5s;
+                            }
+                            &:hover .out_line{
+                                background-color: $color-yellow;
+                            }
+                        }
+                  }
+              }
+              
+              
+          }
+      }
+}

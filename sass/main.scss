@@ -1,0 +1,30 @@
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+
+//base
+@import "./Base/reset";
+
+//components
+@import "./Components/title";
+//Layout
+@import "./Layouts/header";
+@import "./Layouts/carousel";
+@import "./Layouts/about";
+@import "./Layouts/parallax";
+@import "./Layouts/team";
+@import "./Layouts/portfolio";
+@import "./Layouts/services";
+@import "./Layouts/testimonial";
+@import "./Layouts/feature";
+@import "./Layouts/number";
+@import "./Layouts/blog";
+@import "./Layouts/testimonial_2";
+@import "./Layouts/videoDemo";
+@import "./Layouts/mypost";
+@import "./Layouts/price";
+@import "./Layouts/subscribe";
+@import "./Layouts/clients";
+@import "./Layouts/contact_1";
+@import "./Layouts/contact_2";
+@import "./Layouts/footer";
+@import "./Layouts/backToTop";

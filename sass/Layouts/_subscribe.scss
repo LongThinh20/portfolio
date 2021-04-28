@@ -1,0 +1,139 @@
+.subscribe{
+    .subscribe-content{
+        padding: 100px 0;
+        position: relative;
+        h3{
+            color: $color-yellow;
+        }
+        .subscribe-form{
+            position: absolute;
+            left: 20%;
+           
+            .form-inline{
+                .form-group{
+                    input{
+                       
+                        width: 500px;
+                        height: 52px;
+                        padding: 6px 12px;
+                        @include styleText(#555, $fs-0 - 1,$fw-normal);
+                        border-color: transparent;
+                    }                         
+                }
+                button{
+                  padding: 15px 30px;
+                  color: $color-white-0;
+                  background-color: $color-black-1;
+                  border-color: transparent ;
+              }
+              }
+        }
+       
+    }
+}
+@include reponsive_769_991{
+    .subscribe{
+        .subscribe-content{
+            position: relative;
+            h3{
+                color: $color-yellow;
+            }
+            .subscribe-form{
+                position: absolute;
+                left: 3%;
+               
+                .form-inline{
+                    .form-group{
+                        input{
+                           
+                            width: 500px;
+                            height: 52px;
+                            padding: 6px 12px;
+                            @include styleText(#555, $fs-0 - 1,$fw-normal);
+                            border-color: transparent;
+                        }                         
+                    }
+                    button{
+                      padding: 15px 30px;
+                      color: $color-white-0;
+                      background-color: $color-black-1;
+                      border-color: transparent ;
+                  }
+                  }
+            }
+           
+        }
+    }
+}
+@include responsive("medium"){
+    .subscribe{
+        .subscribe-content{
+            position: relative;
+            h3{
+                color: $color-yellow;
+            }
+            .subscribe-form{
+                position: absolute;
+                left: 3%;
+               
+                .form-inline{
+                    .form-group{
+                        input{
+                           
+                            width: 500px;
+                            height: 52px;
+                            padding: 6px 12px;
+                            @include styleText(#555, $fs-0 - 1,$fw-normal);
+                            border-color: transparent;
+                        }                         
+                    }
+                    button{
+                      padding: 15px 30px;
+                      color: $color-white-0;
+                      background-color: $color-black-1;
+                      border-color: transparent ;
+                  }
+                  }
+            }
+           
+        }
+    }
+}
+
+@include responsive("small"){
+    .subscribe{
+        .subscribe-content{
+            position: relative;
+            h3{
+                color: $color-yellow;
+            }
+            p{
+                padding-bottom: 60px;
+            }
+            .subscribe-form{
+                position: absolute;
+                left: 20px;
+               
+                .form-inline{
+                    .form-group{
+                        input{
+                           
+                            width: 380px;
+                            height: 52px;
+                            padding: 6px 12px;
+                            @include styleText(#555, $fs-0 - 1,$fw-normal);
+                            border-color: transparent;
+                        }                         
+                    }
+                    button{
+                      padding: 15px 30px;
+                      color: $color-white-0;
+                      background-color: $color-black-1;
+                      border-color: transparent ;
+                  }
+                  }
+            }
+           
+        }
+    }
+}

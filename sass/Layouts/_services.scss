@@ -1,0 +1,75 @@
+.services{
+    background-color: $color-white-0;
+    .services-content{
+        padding: 100px 0;
+        .services-items{
+            text-align: center;
+            padding: 50px;
+            border: 1px solid #e9e9e9;
+            transition: all .5s;
+            i{
+                font-size: $fs-6;
+                color: $color-gray-0;
+                padding-bottom: 30px;
+                transition: all .5s;
+            }
+            h4{
+                @include styleText($color-black-1,$fs-3,$fw-normal);
+                margin-bottom: 20px;
+                transition: all .5s;
+            }
+            p{
+                @include styleText($color-gray-0,$fs-0,$fw-normal);
+            }
+            &:hover{
+                background-color: $color-black-bg;
+                i{
+                    color: $color-yellow;
+                }
+                h4{
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("small"){
+    .services{
+        background-color: $color-white-0;
+        .services-content{
+            p{
+                width: 80%;
+            }
+            padding: 100px 0;
+            .services-items{
+                text-align: center;
+                padding: 50px;
+                border: 1px solid #e9e9e9;
+                transition: all .5s;
+                i{
+                    @include styleText($color-black-0,$fs-6,$fw-normal);
+                    padding-bottom: 30px;
+                    transition: all .5s;
+                }
+                h4{
+                    @include styleText($color-black-1,$fs-3,$fw-normal);
+                    margin-bottom: 20px;
+                    transition: all .5s;
+                }
+                p{
+                    @include styleText($color-gray-0,$fs-0,$fw-normal);
+                }
+                &:hover{
+                    background-color: $color-black-bg;
+                    i{
+                        color: $color-yellow;
+                    }
+                    h4{
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

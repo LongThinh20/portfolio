@@ -1,0 +1,279 @@
+.Mypost{
+  background-color: $color-white-0;
+    .post-content{
+       padding: 100px 0;
+        width: 96%;
+         margin: auto;
+        .post-items{ 
+            padding: 0;
+            .post-img{
+                cursor: pointer;
+                img{
+                    display: block;
+                    width: 100%;
+                    position: relative;                   
+                }
+                
+            }                     
+                .post-desk{  
+                    color: $color-white-0;
+                    top: 0;
+                    padding: 100px;
+                    position: absolute; 
+                    cursor: pointer;
+                                 
+                    .post-title{
+                        p{
+                            font-size: $fs-0 + 1;
+                        }
+                        h3{
+                            margin-bottom:30px ;
+                            a{
+                                text-decoration: none;
+                                font-size: $fs-5;
+                                letter-spacing: 2px;
+                                color: $color-white-0;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }              
+        }
+        
+       
+    }
+}
+@include reponsive_993_1199{
+    .Mypost{
+        background-color: $color-white-0;
+          .post-content{
+             padding: 100px 0;
+              width: 96%;
+               margin: auto;
+              .post-items{ 
+                  padding: 0;
+                  .post-img{
+                      cursor: pointer;
+                      img{
+                          display: block;
+                          width: 100%;
+                          position: relative;                   
+                      }
+                      
+                  }                     
+                      .post-desk{  
+                          color: $color-white-0;
+                          top: 0;
+                          padding: 50px;
+                          position: absolute; 
+                          cursor: pointer;
+                                       
+                          .post-title{
+                              p{
+                                  font-size: $fs-0 + 1;
+                              }
+                              h3{
+                                  margin-bottom:30px ;
+                                  a{
+                                      text-decoration: none;
+                                      font-size: $fs-5;
+                                      letter-spacing: 2px;
+                                      color: $color-white-0;
+                                  }
+                              }
+                          }
+                      }              
+              }
+              
+             
+          }
+      }
+}
+@include responsive("large"){
+    .Mypost{
+        background-color: $color-white-0;
+          .post-content{
+             padding: 100px 0;
+              width: 96%;
+               margin: auto;
+              .post-items{ 
+                  padding: 0;
+                  .post-img{
+                      cursor: pointer;
+                      img{
+                          display: block;
+                          width: 100%;
+                          position: relative;                   
+                      }
+                      
+                  }                     
+                      .post-desk{  
+                          color: $color-white-0;
+                          top: 0;
+                          padding: 50px;
+                          position: absolute; 
+                          cursor: pointer;
+                                       
+                          .post-title{
+                              p{
+                                  font-size: $fs-0 + 1;
+                              }
+                              h3{
+                                  margin-bottom:30px ;
+                                  a{
+                                      text-decoration: none;
+                                      font-size: $fs-5;
+                                      letter-spacing: 2px;
+                                      color: $color-white-0;
+                                  }
+                              }
+                          }
+                      }              
+              }
+              
+             
+          }
+      }
+}
+@include reponsive_769_991{
+    .Mypost{
+        background-color: $color-white-0;
+          .post-content{
+             padding: 100px 0;
+              width: 96%;
+               margin: auto;
+              .post-items{ 
+                  padding: 0;
+                  .post-img{
+                      cursor: pointer;
+                      img{
+                          display: block;
+                          width: 100%;
+                          position: relative;                   
+                      }
+                      
+                  }                     
+                      .post-desk{  
+                          color: $color-white-0;
+                          top: 0;
+                          padding: 150px 70px;
+                          position: absolute; 
+                          cursor: pointer;
+                                       
+                          .post-title{
+                              p{
+                                  font-size: $fs-0 + 1;
+                                  margin-bottom: 0;
+                              }
+                              h3{
+                                  margin-bottom:30px ;
+                                  a{
+                                      text-decoration: none;
+                                      font-size: $fs-3;
+                                      letter-spacing: 2px;
+                                      color: $color-white-0;
+                                  }
+                              }
+                          }
+                      }              
+              }
+              
+             
+          }
+      }
+}
+
+@include responsive("medium"){
+    .Mypost{
+        background-color: $color-white-0;
+          .post-content{
+             padding: 100px 0;
+              width: 96%;
+               margin: auto;
+              .post-items{ 
+                  padding: 0;
+                  .post-img{
+                      cursor: pointer;
+                      img{
+                          display: block;
+                          width: 100%;
+                          position: relative;                   
+                      }
+                      
+                  }                     
+                      .post-desk{  
+                          color: $color-white-0;
+                          top: 0;
+                          padding: 150px 70px;
+                          position: absolute; 
+                          cursor: pointer;
+                                       
+                          .post-title{
+                              p{
+                                  font-size: $fs-0 + 1;
+                                  margin-bottom: 0;
+                              }
+                              h3{
+                                  margin-bottom:30px ;
+                                  a{
+                                      text-decoration: none;
+                                      font-size: $fs-3;
+                                      letter-spacing: 2px;
+                                      color: $color-white-0;
+                                  }
+                              }
+                          }
+                      }              
+              }
+              
+             
+          }
+      }
+}
+
+@include responsive("small"){
+    .Mypost{
+        background-color: $color-white-0;
+          .post-content{
+             padding: 100px 0;
+              width: 96%;
+               margin: auto;
+              .post-items{ 
+                  padding: 0;
+                  .post-img{
+                      cursor: pointer;
+                      img{
+                          display: block;
+                          width: 100%;
+                          position: relative;                   
+                      } 
+                  }                     
+                      .post-desk{  
+                          color: $color-white-0;
+                          top: 0;
+                          padding: 80px 70px;
+                          position: absolute; 
+                          cursor: pointer;
+                                       
+                          .post-title{
+                              p{
+                                  font-size: $fs-0 + 1;
+                                  margin-bottom: 0;
+                              }
+                              h3{
+                                  margin-bottom:30px ;
+                                  a{
+                                      text-decoration: none;
+                                      font-size: $fs-3;
+                                      letter-spacing: 2px;
+                                      color: $color-white-0;
+                                  }
+                              }
+                          }
+                      }              
+              }
+              
+             
+          }
+      }
+}

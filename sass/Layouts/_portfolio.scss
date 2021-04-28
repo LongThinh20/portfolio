@@ -1,0 +1,488 @@
+.portfolio{
+    background-color: $color-white-0;
+    .portfolio-content{
+        padding: 100px 0;
+        p{
+            width: 40%;
+        }
+        .galery-content{
+            ul{
+            display: block;
+            text-align: center;
+                .filter-button{
+                    @include styleText(#a9a8a8,$fs-0,$fw-normal);
+                    margin:100px 0 50px 0;
+                    background: transparent;
+                    &:hover{
+                        @include styleText($color-black-1,$fs-0,$fw-normal);
+                        box-shadow: none;
+                    }
+                   
+                    }
+                    .active{
+                        color: $color-black-0;
+                    }
+            }
+           
+                
+            }
+            .img-responsive{
+                width: 100%;
+            }
+                  
+            .gallery_product{
+                margin-bottom: 30px;
+                position: relative;
+                .portfolio-hover{
+                    position: absolute;
+                    top: 0;
+                    left: 15px;
+                    bottom: 0;
+                    right: 15px;
+                    border: 20px solid rgba(0, 0, 0, .1);
+                    background-color: rgba(255, 255, 255, .9);
+                    opacity: 0;
+                    transition: all .5s;
+                    
+                    .portfolio-btn{
+                               position: absolute;
+                               top:30%;
+                               left: 50%;
+                               transform: translate(-50%,-200%);
+                               transition: all .5s;
+                               a{
+                                   @include styleText($color-black-bg,$fs-6 ,$fw-normal);
+                               }
+                    }
+                    .portfolio-description{
+                               position: absolute;
+                               text-align: center;
+                               bottom: 20%;
+                               left: 50%;
+                               transform: translate(-50%,150%);
+                               transition: all .5s;
+                               h4{
+                                   a{
+                                    text-decoration: none;
+                                    @include styleText($color-black-0,$fs-1 + 1,$fw-normal);
+                                    letter-spacing: 4px;
+                                    transition: all .5s;
+                                    &:hover{
+                                        a{
+                                            color: $color-yellow;
+                                        }
+                                    }
+                                   }
+                               }
+                               p{
+                                   display: inline;
+                                a{
+                                    text-decoration: none;
+                                    @include styleText(#757575,$fs-2 ,$fw-normal);
+                                    letter-spacing: 4px;
+                                    transition: all .5s;
+                                }
+                                &:hover{
+                                    a{
+                                        color: $color-yellow;
+                                    }
+                                }
+                               }
+                    }
+
+                }
+                 &:hover .portfolio-hover{
+                     opacity: 1;
+                     .portfolio-btn{
+                      transform: translate(-50%,-40%);
+                     }
+                     .portfolio-description{
+                      transform: translate(-50%,0);
+                     }
+          }
+            }
+        
+        }
+        .lb-data{
+            .lb-close{
+               position: absolute;
+               top: -20px;
+               left: 50%; 
+            }
+        }
+
+        .promo-box{
+            width: 100%;
+            background-color: $color-black-bg;
+            color: $color-white-0;
+            padding: 60px 0 ;
+            .promo-info{
+                span{
+                    font-size: $fs-0;
+                }
+                h3{
+                    span{
+                        @include styleText($color-yellow,$fs-5,$fw-normal);
+                    }
+                }
+                .promo-btn{
+                    position: relative;
+                    a{
+                        position: absolute;
+                        @include styleText($color-white-0,$fs-0,$fw-normal);
+                        padding: $pd-1 $pd-3;
+                        top: 0px;
+                        right: 0px;
+                        transition: all .5s;
+                        &:hover{
+                            background-color: $color-yellow;
+                        }
+                    }
+                }
+                
+            }
+        }
+       
+    }
+
+@media screen and (min-width:1201px) and (max-width:1434px){
+    
+    .portfolio{
+        .portfolio-content{
+            .galery-content{
+                 .gallery_product{
+                     .portfolio-hover{
+                         opacity: 0;
+                        .portfolio-btn{
+                            top: 50%;
+                            left: 50%;
+                           
+                         }
+                         .portfolio-description{
+                            bottom: 60%;
+                            width: 100%;
+                            left: 50%;
+                            
+                            p{
+                               
+                                display: inline;
+                            }
+                         }                                       
+                     }
+                     &:hover .portfolio-hover{
+                         opacity: 1;
+                         .portfolio-btn{
+                            top: 30%;
+                            left: 50%;
+                           
+                         }
+                        .portfolio-description{
+                            bottom: 10%;
+                            width: 100%;
+                            left: 50%;
+                            
+                         }
+                     }
+                 }
+             }
+         }
+     }
+}
+
+ @include responsive("extra-large"){
+     .portfolio{
+        .portfolio-content{
+            .galery-content{
+                
+                 .gallery_product{
+                     .portfolio-hover{
+                         opacity: 0;
+                        .portfolio-btn{
+                            top: 50%;                                                     
+                         }
+                         .portfolio-description{
+                            bottom: 60%;
+                            width: 100%;
+                            
+                         }                                       
+                     }
+                     &:hover .portfolio-hover{
+                         opacity: 1;
+                         .portfolio-btn{
+                            top: 30%;                          
+                           
+                         }
+                        .portfolio-description{
+                            bottom: 10%;
+                                                                               
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+ @include responsive("large"){
+    .portfolio{
+       .portfolio-content{
+           .galery-content{
+                .gallery_product{
+                    .portfolio-hover{
+                        opacity: 0;
+                       .portfolio-btn{
+                           top: 50%;                          
+                          
+                        }
+                        .portfolio-description{
+                           bottom: 60%;                      
+                           p{                             
+                               a{
+                                   font-size: $fs-2;
+                               }
+                           }
+                           h4{
+                               a{
+                                font-size: $fs-0 - 1 ;
+                               }
+                           }
+                        }                                       
+                    }
+                    &:hover .portfolio-hover{
+                        opacity: 1;
+                        .portfolio-btn{
+                           top: 30%;                           
+                          
+                        }
+                       .portfolio-description{
+                           bottom: 10%; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+ @include responsive("medium"){
+     .portfolio{
+        .portfolio-content{
+            p{
+                width: 70%;
+                padding-bottom: 50px;
+            }
+            .galery-content{
+                 .gallery_product{
+                     .portfolio-hover{
+                         opacity: 0;
+                        .portfolio-btn{
+                            top: 50%;
+                         }
+                         .portfolio-description{
+                            bottom: 60%;                         
+                         }                                       
+                     }
+                     &:hover .portfolio-hover{
+                         opacity: 1;
+                         .portfolio-btn{
+                            top: 30%;
+                            left: 50%;
+                           
+                         }
+                        .portfolio-description{
+                            bottom: 20%;
+                         }
+                     }
+                 }
+             }
+         }
+
+         .promo-box{
+            width: 100%;
+            color: $color-white-0;
+            padding: 60px 0 ;
+            .promo-info{
+                span{
+                    font-size: $fs-0;
+                }
+                h3{
+                    font-size: $fs-3;
+                    span{
+                        font-size:  $fs-3 !important;
+                    }
+                }
+                .promo-btn{
+                    position: relative;
+                    a{
+                        position: absolute;
+                        @include styleText($color-white-0,$fs-0,$fw-normal);
+                        padding: $pd-1 $pd-3;
+                        top: 0px;
+                        right: 0px;
+                        transition: all .5s;
+                        &:hover{
+                            background-color: $color-yellow;
+                        }
+                    }
+                }
+                
+            }
+        }
+     }
+ }
+ @media screen and (min-width:577px) and (max-width:767px){
+    .portfolio{
+        .portfolio-content{
+            .galery-content{
+                 .gallery_product{
+                     .portfolio-hover{
+                         opacity: 0;
+                        .portfolio-btn{
+                            top: 50%;                         
+                         }
+                         .portfolio-description{
+                            bottom: 60%;                          
+                            p{
+                                
+                                a{
+                                    font-size: $fs-2;
+                                }
+                            }
+                            h4{
+                                a{
+                                 font-size: $fs-0 - 1 ;
+                                }
+                            }
+                         }                                       
+                     }
+                     &:hover .portfolio-hover{
+                         opacity: 1;
+                         .portfolio-btn{
+                            top: 30%;                                                   
+                         }
+                        .portfolio-description{
+                            bottom: 10%;                                                  
+                         }
+                     }
+                 }
+             }
+ 
+             .promo-box{
+                 width: 100%;
+                 color: $color-white-0;
+                 padding: 60px 0 ;
+                 .promo-info{
+                     span{
+                         font-size: $fs-0;
+                     }
+                     h3{
+                         font-size: $fs-3;
+                         span{
+                             font-size:  $fs-3 !important;
+                         }
+                     }
+                     .promo-btn{
+                         position: relative;
+                         padding: 20px 0;
+                         a{
+                             position: absolute;
+                             @include styleText($color-white-0,$fs-1 - 1,$fw-normal);
+                             padding: $pd-1 $pd-3;
+                             margin-top: 20px;
+                             top: 0;
+                             left: 20px;
+                             width: 150px;
+                             display: inline-block;
+                             transition: all .5s;
+                             &:hover{
+                                 background-color: $color-yellow;
+                             }
+                         }
+                     }
+                     
+                 }
+             }
+         }
+     }
+}
+ @include responsive("small"){
+    .portfolio{
+       .portfolio-content{
+        p{
+            width: 80%;
+        }
+           .galery-content{
+               
+                .gallery_product{
+                    .portfolio-hover{
+                        opacity: 0;
+                       .portfolio-btn{
+                           top: 50%;                         
+                        }
+                        .portfolio-description{
+                           bottom: 60%;                          
+                           p{
+                               
+                               a{
+                                   font-size: $fs-2;
+                               }
+                           }
+                           h4{
+                               a{
+                                font-size: $fs-0 - 1 ;
+                               }
+                           }
+                        }                                       
+                    }
+                    &:hover .portfolio-hover{
+                        opacity: 1;
+                        .portfolio-btn{
+                           top: 30%;                                                   
+                        }
+                       .portfolio-description{
+                           bottom: 10%;                                                  
+                        }
+                    }
+                }
+            }
+
+            .promo-box{
+                width: 100%;
+                color: $color-white-0;
+                padding: 60px 0 ;
+                .promo-info{
+                    span{
+                        font-size: $fs-0;
+                    }
+                    h3{
+                        font-size: $fs-3;
+                        span{
+                            font-size:  $fs-3 !important;
+                        }
+                    }
+                    .promo-btn{
+                        position: relative;
+                        padding: 20px 0;
+                        a{
+                            position: absolute;
+                            @include styleText($color-white-0,$fs-1 - 1,$fw-normal);
+                            padding: $pd-1 $pd-3;
+                            margin-top: 20px;
+                            top: 0;
+                            left: 20px;
+                            width: 150px;
+                            display: inline-block;
+                            transition: all .5s;
+                            &:hover{
+                                background-color: $color-yellow;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

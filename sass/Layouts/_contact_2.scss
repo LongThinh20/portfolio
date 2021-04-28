@@ -1,0 +1,108 @@
+.contact_2{
+    background-color: $color-white-0;
+    .contact-content{
+        padding: 100px 0;
+        .contact-left{
+            .form-group{
+                input{
+                    width: 100%;
+                    padding: 6px 12px;
+                    border: 1px solid #e9e9e9; 
+                    height: 40px;
+                    &:focus{
+                        border-radius: 0;
+                        border: 1px solid $color-black-1; ;
+                    }
+                }
+                input::placeholder{
+                    color: $color-gray-0;
+                  
+                }
+            }
+        }
+        .contact-right{
+            .form-group{
+                textarea{
+                    width: 100%;
+                    height: 95px;
+                    padding: 6px 12px;
+                    margin-bottom: -7px;
+                    border: 1px solid #e9e9e9;
+                  
+                    
+                }
+                button{
+                    border-radius: 0;
+                    padding: 6px 0;
+                    width: 100%;
+                    height: 40px;
+                    background-color: $color-black-bg;
+                    color: $color-white-0;
+                    &:hover{
+                        background-color: $color-yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("small"){
+    .contact_2{
+        background-color: $color-white-0;
+        .contact-content{
+            p{
+                width: 80%;
+            }
+            padding: 100px 0;
+            .contact-left{
+                .form-group{
+                    input{
+                        width: 90%;
+                        display: block;
+                        margin: auto;
+                        padding: 6px 12px;
+                        border: 1px solid #e9e9e9; 
+                        height: 40px;
+                        &:focus{
+                            border-radius: 0;
+                            border: 1px solid $color-black-1; ;
+                        }
+                    }
+                    input::placeholder{
+                        color: $color-gray-0;
+                      
+                    }
+                }
+            }
+            .contact-right{
+                .form-group{
+                    textarea{
+                        width: 90%;
+                        display: block;
+                        margin: auto;
+                        height: 95px;
+                        padding: 6px 12px;
+                        margin-bottom: -7px;
+                        border: 1px solid #e9e9e9;
+                      
+                        
+                    }
+                    button{
+                        margin: auto;
+                        display: block;
+                        border-radius: 0;
+                        padding: 6px 0;
+                        width: 90%;
+                        height: 40px;
+                        background-color: $color-black-bg;
+                        color: $color-white-0;
+                        &:hover{
+                            background-color: $color-yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

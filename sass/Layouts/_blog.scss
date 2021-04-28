@@ -1,0 +1,349 @@
+.blog{
+    background-color: $color-white-0;
+    .blog-content{
+        padding: 100px 0;
+        .blog-info{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+                padding: 0;
+                .blog-img1{
+                   background-image: url(../img/p1.jpg);
+                   background-size: cover;
+                   position: relative;
+                }
+                .blog-img2{
+                    background-image: url(../img/p2.jpg);
+                    background-size: cover;
+                    position: relative;
+                 }
+                 .blog-img3{
+                    background-image: url(../img/p3.jpg);
+                    background-size: cover;
+                    position: relative;
+                 }
+                 .blog-img1::after,.blog-img2::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 15px;
+                    height: 14px;
+                    background-color: $color-white-0;
+                    left: 50%;
+                    bottom: -7px;
+                    transform: rotate(45deg);
+                 }
+                 .blog-img3::after{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 15px;
+                    height: 14px;
+                    background-color: $color-white-0;
+                    left: 50%;
+                    top: -7px;
+                    transform: rotate(45deg);
+                 }
+                .blog-detail{
+                    padding: 40px;
+                    .date{
+                        position: relative;
+                        @include styleText($color-gray-2,$fs-0 - 1,$fw-normal);
+                        margin-bottom: 25px;
+                        letter-spacing: 2px;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 30px;
+                            height: 1px;
+                            width: 60px;
+                            background-color: $color-black-bg;
+
+                        }
+                    }
+                    h4{
+                        a{
+                            @include styleText($color-black-1,$fs-3,$fw-normal);
+                            text-decoration: none;
+                            transition: all .3s;
+                            &:hover{
+                                color: $color-yellow;                  
+                            }
+                        }
+                        margin-bottom: 30px;
+                    }
+                    .post{
+                        list-style: none;
+                        li{
+                            display: inline;
+                            margin-right: 10px;
+                            a{
+                                @include styleText(#909090,$fs-2,$fw-normal);
+                                text-decoration: none;
+                                transition: all .3s;
+                                &:hover{
+                                    color: $color-yellow;                  
+                                }
+                            }
+                        }
+                    }
+                }
+            
+        }
+        .view-all{
+            margin-top: 50px;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            a{
+                text-decoration: none;
+                @include styleText(#bbb,$fs-3,$fw-normal);
+                letter-spacing: 1px;
+                transition: all .5s;
+                &:hover{
+                    color: $color-black-0;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("medium"){
+    .blog{
+        background-color: $color-white-0;
+        .blog-content{
+            padding: 100px 0;
+            .blog-info{
+                    display: block;
+                    padding: 0;
+                    .blog-img1{
+                       background-image: url(../img/p1.jpg);
+                       background-size: cover;
+                       position: relative;
+                       width: 100%;
+                       height: 300px;
+                    }
+                    .blog-img2{
+                        background-image: url(../img/p2.jpg);
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                
+                     }
+                     .blog-img3{
+                        background-image: url(../img/p3.jpg);
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                     }
+                     .blog-img1::after,.blog-img2::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 14px;
+                        background-color: $color-white-0;
+                        left: 50%;
+                        bottom: -7px;
+                        transform: rotate(45deg);
+                     }
+                     .blog-img3::after{
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 14px;
+                        background-color: $color-white-0;
+                        left: 50%;
+                        top: -7px;
+                        transform: rotate(45deg);
+                     }
+                    .blog-detail{
+                        padding: 40px;
+                        .date{
+                            position: relative;
+                            @include styleText($color-gray-2,$fs-0 - 1,$fw-normal);
+                            margin-bottom: 25px;
+                            letter-spacing: 2px;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 30px;
+                                height: 1px;
+                                width: 60px;
+                                background-color: $color-black-bg;
+    
+                            }
+                        }
+                        h4{
+                            a{
+                                @include styleText($color-black-1,$fs-3,$fw-normal);
+                                text-decoration: none;
+                                transition: all .3s;
+                                &:hover{
+                                    color: $color-yellow;                  
+                                }
+                            }
+                            margin-bottom: 30px;
+                        }
+                        .post{
+                            list-style: none;
+                            li{
+                                display: inline;
+                                margin-right: 10px;
+                                a{
+                                    @include styleText(#909090,$fs-2,$fw-normal);
+                                    text-decoration: none;
+                                    transition: all .3s;
+                                    &:hover{
+                                        color: $color-yellow;                  
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+            }
+            .view-all{
+                margin-top: 50px;
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    @include styleText(#bbb,$fs-3,$fw-normal);
+                    letter-spacing: 1px;
+                    transition: all .5s;
+                    &:hover{
+                        color: $color-black-0;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@include responsive("small"){
+    .blog{
+        background-color: $color-white-0;
+        .blog-content{
+            padding: 100px 0;
+            p{
+                width: 80%;
+            }
+            .blog-info{
+                    display: block;
+                    padding: 0;
+                    .blog-img1{
+                       background-image: url(../img/p1.jpg);
+                       background-size: cover;
+                       position: relative;
+                       width: 100%;
+                       height: 300px;
+                    }
+                    .blog-img2{
+                        background-image: url(../img/p2.jpg);
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                
+                     }
+                     .blog-img3{
+                        background-image: url(../img/p3.jpg);
+                        background-size: cover;
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                     }
+                     .blog-img1::after,.blog-img2::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 14px;
+                        background-color: $color-white-0;
+                        left: 50%;
+                        bottom: -7px;
+                        transform: rotate(45deg);
+                     }
+                     .blog-img3::after{
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 14px;
+                        background-color: $color-white-0;
+                        left: 50%;
+                        top: -7px;
+                        transform: rotate(45deg);
+                     }
+                    .blog-detail{
+                        padding: 40px;
+                        .date{
+                            position: relative;
+                            @include styleText($color-gray-2,$fs-0 - 1,$fw-normal);
+                            margin-bottom: 25px;
+                            letter-spacing: 2px;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 30px;
+                                height: 1px;
+                                width: 60px;
+                                background-color: $color-black-bg;
+    
+                            }
+                        }
+                        h4{
+                            a{
+                                @include styleText($color-black-1,$fs-3,$fw-normal);
+                                text-decoration: none;
+                                transition: all .3s;
+                                &:hover{
+                                    color: $color-yellow;                  
+                                }
+                            }
+                            margin-bottom: 30px;
+                        }
+                        .post{
+                            list-style: none;
+                            li{
+                                display: inline;
+                                margin-right: 10px;
+                                a{
+                                    @include styleText(#909090,$fs-2,$fw-normal);
+                                    text-decoration: none;
+                                    transition: all .3s;
+                                    &:hover{
+                                        color: $color-yellow;                  
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+            }
+            .view-all{
+                margin-top: 50px;
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    @include styleText(#bbb,$fs-3,$fw-normal);
+                    letter-spacing: 1px;
+                    transition: all .5s;
+                    &:hover{
+                        color: $color-black-0;
+                    }
+                }
+            }
+        }
+    }
+}

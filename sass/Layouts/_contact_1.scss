@@ -1,0 +1,33 @@
+.contact_1{
+    background-image: url(../img/15.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contact-content{
+        padding: 150px 0;
+        color: $color-white-0;
+        .contact-items{
+            text-align: center;
+            animation-delay: 1s;
+            .icon{
+                i{
+                    font-size: 40px;
+                }
+                padding-bottom: 30px;
+            }
+            .title{
+                h4{
+                    @include styleText($color-white-0,$fs-3,$fw-normal);
+                    letter-spacing: 1px;
+                    line-height: 1.5px;
+                }               
+                margin-bottom: 20px;
+            }
+            .info{
+                width: 60%;
+                margin: auto;
+            }
+
+        }
+    }
+}
